@@ -3,6 +3,7 @@ import axios from 'axios'
 import Header from './Components/ui/Header'
 import './App.css'
 import './index.css'
+import CharacterGrid from './Components/characters/CharacterGrid'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <div className='container'>
      <Header />
+     <CharacterGrid isLoading={isLoading} items={items}/>
     </div>
   )
 }
